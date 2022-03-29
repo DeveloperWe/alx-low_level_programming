@@ -8,19 +8,19 @@
 void print_chessboard(char (*a)[8])
 {
 	/*Declaring variables*/
-	int i, j;
+	int j, k;
 
-	i = 0;
-	while (i < 8) /*number repetitions*/
+	j = 0;
+	while (j < 8) /*number repetitions*/
 	{
-		j = 0;
-		while (j < 8)
+		k = 0;
+		while (k < 8)
 		{
-			_putchar (a[i][j]);
-			j++;
+			_putchar (a[j][k]);
+			k++;
 		}
 		_putchar ('\n'); /*print new line*/
-		i++; /*add +1*/
+		k++; /*add +1*/
 	}
 
 }
